@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
-    modelDirectory="/QtQuick/src" modelPluginID="QtQuick" modelName="QtQuick"
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/QtQuick/src" modelPluginID="QtQuick" modelName="QtQuick"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
     complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
   <foreignModel>qtQuick.ecore</foreignModel>
-  <genPackages prefix="QtQuick" disposableProviderFactory="true" ecorePackage="qtQuick.ecore#/"/>
+  <genPackages prefix="QtQuick" disposableProviderFactory="true" ecorePackage="qtQuick.ecore#/">
+    <genClasses ecoreClass="qtQuick.ecore#//Item">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference qtQuick.ecore#//Item/contains"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Item/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Item/anchors_Margins"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Item/Layout_fillWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Item/Layout_fillHeight"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Item/anchors_fill"/>
+    </genClasses>
+    <genClasses ecoreClass="qtQuick.ecore#//ApplicationWindow">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//ApplicationWindow/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//ApplicationWindow/height"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//ApplicationWindow/visible"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//ApplicationWindow/title"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference qtQuick.ecore#//ApplicationWindow/content"/>
+    </genClasses>
+    <genClasses ecoreClass="qtQuick.ecore#//Button">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Button/text"/>
+    </genClasses>
+    <genClasses ecoreClass="qtQuick.ecore#//RowLayout"/>
+    <genClasses ecoreClass="qtQuick.ecore#//ColumnLayout"/>
+    <genClasses ecoreClass="qtQuick.ecore#//TextArea"/>
+  </genPackages>
 </genmodel:GenModel>
