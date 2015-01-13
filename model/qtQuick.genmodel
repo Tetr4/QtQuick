@@ -8,7 +8,7 @@
     <genClasses ecoreClass="qtQuick.ecore#//Item">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference qtQuick.ecore#//Item/contains"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Item/id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Item/anchors_Margins"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Item/anchors_margins"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Item/Layout_fillWidth"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Item/Layout_fillHeight"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Item/anchors_fill"/>

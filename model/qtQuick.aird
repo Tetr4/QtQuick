@@ -235,7 +235,7 @@
           <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_Se9ZRIymEeSezu6GvFZWWg" red="255" green="252" blue="216"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_mvVNEIykEeSezu6GvFZWWg" name="id : EString" tooltipText="&#xA;ERROR : The required feature 'eAttributeType' of 'org.eclipse.emf.ecore.impl.EAttributeImpl@736930d5{platform:/resource/QtQuick/model/qtQuick.ecore#//Item/newAttribute}' must be set&#xA;ERROR : The typed element must have a type">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_mvVNEIykEeSezu6GvFZWWg" name="id : EString" tooltipText="">
           <target xmi:type="ecore:EAttribute" href="qtQuick.ecore#//Item/id"/>
           <semanticElements xmi:type="ecore:EAttribute" href="qtQuick.ecore#//Item/id"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_n4NgsIykEeSezu6GvFZWWg" labelAlignment="LEFT">
@@ -246,9 +246,9 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_qk1pkIylEeSezu6GvFZWWg" name="anchors_Margins : EInt = 11" tooltipText="&#xA;ERROR : The required feature 'eAttributeType' of 'org.eclipse.emf.ecore.impl.EAttributeImpl@1e87a2d6{platform:/resource/QtQuick/model/qtQuick.ecore#//Item/newAttribute}' must be set&#xA;ERROR : The typed element must have a type">
-          <target xmi:type="ecore:EAttribute" href="qtQuick.ecore#//Item/anchors_Margins"/>
-          <semanticElements xmi:type="ecore:EAttribute" href="qtQuick.ecore#//Item/anchors_Margins"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_qk1pkIylEeSezu6GvFZWWg" name="anchors_margins : EInt = 11" tooltipText="">
+          <target xmi:type="ecore:EAttribute" href="qtQuick.ecore#//Item/anchors_margins"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="qtQuick.ecore#//Item/anchors_margins"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_4JsVsIylEeSezu6GvFZWWg" labelAlignment="LEFT">
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_4JsVsYylEeSezu6GvFZWWg"/>
             <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
@@ -257,7 +257,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-HwPkIylEeSezu6GvFZWWg" name="Layout_fillWidth : EBoolean = false" tooltipText="&#xA;ERROR : The required feature 'eAttributeType' of 'org.eclipse.emf.ecore.impl.EAttributeImpl@1eaa298{platform:/resource/QtQuick/model/qtQuick.ecore#//Item/newAttribute}' must be set&#xA;ERROR : The typed element must have a type">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-HwPkIylEeSezu6GvFZWWg" name="Layout_fillWidth : EBoolean = false" tooltipText="">
           <target xmi:type="ecore:EAttribute" href="qtQuick.ecore#//Item/Layout_fillWidth"/>
           <semanticElements xmi:type="ecore:EAttribute" href="qtQuick.ecore#//Item/Layout_fillWidth"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_AuoyQIymEeSezu6GvFZWWg" labelAlignment="LEFT">
@@ -268,7 +268,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_BHaeoIymEeSezu6GvFZWWg" name="Layout_fillHeight : EBoolean = false" tooltipText="&#xA;ERROR : The required feature 'eAttributeType' of 'org.eclipse.emf.ecore.impl.EAttributeImpl@1c30e62e{platform:/resource/QtQuick/model/qtQuick.ecore#//Item/newAttribute}' must be set&#xA;ERROR : The typed element must have a type">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_BHaeoIymEeSezu6GvFZWWg" name="Layout_fillHeight : EBoolean = false" tooltipText="">
           <target xmi:type="ecore:EAttribute" href="qtQuick.ecore#//Item/Layout_fillHeight"/>
           <semanticElements xmi:type="ecore:EAttribute" href="qtQuick.ecore#//Item/Layout_fillHeight"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_EHEtsIymEeSezu6GvFZWWg" labelAlignment="LEFT">
@@ -279,7 +279,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_LIPDUIymEeSezu6GvFZWWg" name="anchors_fill : EString" tooltipText="&#xA;ERROR : The required feature 'eAttributeType' of 'org.eclipse.emf.ecore.impl.EAttributeImpl@21082008{platform:/resource/QtQuick/model/qtQuick.ecore#//Item/newAttribute}' must be set&#xA;ERROR : The typed element must have a type">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_LIPDUIymEeSezu6GvFZWWg" name="anchors_fill : EString" tooltipText="">
           <target xmi:type="ecore:EAttribute" href="qtQuick.ecore#//Item/anchors_fill"/>
           <semanticElements xmi:type="ecore:EAttribute" href="qtQuick.ecore#//Item/anchors_fill"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_OU0UEIymEeSezu6GvFZWWg" labelAlignment="LEFT">
@@ -321,7 +321,7 @@
           <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_7TsB9IykEeSezu6GvFZWWg" red="255" green="252" blue="216"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_soQIQIykEeSezu6GvFZWWg" name="width : EInt = 400" tooltipText="&#xA;ERROR : The required feature 'eAttributeType' of 'org.eclipse.emf.ecore.impl.EAttributeImpl@20a3b680{platform:/resource/QtQuick/model/qtQuick.ecore#//ApplicationWindow/newAttribute}' must be set&#xA;ERROR : The typed element must have a type">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_soQIQIykEeSezu6GvFZWWg" name="width : EInt = 400" tooltipText="">
           <target xmi:type="ecore:EAttribute" href="qtQuick.ecore#//ApplicationWindow/width"/>
           <semanticElements xmi:type="ecore:EAttribute" href="qtQuick.ecore#//ApplicationWindow/width"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_xI63EIykEeSezu6GvFZWWg" labelAlignment="LEFT">
@@ -332,7 +332,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_x_suEIykEeSezu6GvFZWWg" name="height : EInt = 300" tooltipText="&#xA;ERROR : The required feature 'eAttributeType' of 'org.eclipse.emf.ecore.impl.EAttributeImpl@2c29e6d7{platform:/resource/QtQuick/model/qtQuick.ecore#//ApplicationWindow/newAttribute}' must be set&#xA;ERROR : The typed element must have a type">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_x_suEIykEeSezu6GvFZWWg" name="height : EInt = 300" tooltipText="">
           <target xmi:type="ecore:EAttribute" href="qtQuick.ecore#//ApplicationWindow/height"/>
           <semanticElements xmi:type="ecore:EAttribute" href="qtQuick.ecore#//ApplicationWindow/height"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_zkPqAIykEeSezu6GvFZWWg" labelAlignment="LEFT">
@@ -343,7 +343,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_1MeMEIykEeSezu6GvFZWWg" name="visible : EBoolean = true" tooltipText="&#xA;ERROR : The required feature 'eAttributeType' of 'org.eclipse.emf.ecore.impl.EAttributeImpl@78c493d2{platform:/resource/QtQuick/model/qtQuick.ecore#//ApplicationWindow/newAttribute}' must be set&#xA;ERROR : The typed element must have a type">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_1MeMEIykEeSezu6GvFZWWg" name="visible : EBoolean = true" tooltipText="">
           <target xmi:type="ecore:EAttribute" href="qtQuick.ecore#//ApplicationWindow/visible"/>
           <semanticElements xmi:type="ecore:EAttribute" href="qtQuick.ecore#//ApplicationWindow/visible"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_3SWTcIykEeSezu6GvFZWWg" labelAlignment="LEFT">
@@ -354,7 +354,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_4bdQkIykEeSezu6GvFZWWg" name="title : EString = MainWindow" tooltipText="&#xA;ERROR : The required feature 'eAttributeType' of 'org.eclipse.emf.ecore.impl.EAttributeImpl@693f19ba{platform:/resource/QtQuick/model/qtQuick.ecore#//ApplicationWindow/newAttribute}' must be set&#xA;ERROR : The typed element must have a type">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_4bdQkIykEeSezu6GvFZWWg" name="title : EString = MainWindow" tooltipText="">
           <target xmi:type="ecore:EAttribute" href="qtQuick.ecore#//ApplicationWindow/title"/>
           <semanticElements xmi:type="ecore:EAttribute" href="qtQuick.ecore#//ApplicationWindow/title"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_7TxhgIykEeSezu6GvFZWWg" labelAlignment="LEFT">
@@ -380,7 +380,7 @@
           <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_G4fh5IylEeSezu6GvFZWWg" red="255" green="252" blue="216"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_FThvMIylEeSezu6GvFZWWg" name="text : EString" tooltipText="&#xA;ERROR : The required feature 'eAttributeType' of 'org.eclipse.emf.ecore.impl.EAttributeImpl@7808cb71{platform:/resource/QtQuick/model/qtQuick.ecore#//Button/newAttribute}' must be set&#xA;ERROR : The typed element must have a type">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_FThvMIylEeSezu6GvFZWWg" name="text : EString" tooltipText="">
           <target xmi:type="ecore:EAttribute" href="qtQuick.ecore#//Button/text"/>
           <semanticElements xmi:type="ecore:EAttribute" href="qtQuick.ecore#//Button/text"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_G4jMQIylEeSezu6GvFZWWg" labelAlignment="LEFT">
