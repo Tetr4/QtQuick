@@ -25,8 +25,11 @@ Workflow {
 		uri = modelUri
 		modelSlot = "model"
 	}
+	
+//	 TODO code indentation in qml beautifier
+//	bean = JavaBeautifier : formatter_java { }
 
-//	/* check model */
+	/* check model */
 //	component = CheckComponent {
 //		metaModel = mm_emf
 //		checkFile = "metamodel::Checks"
@@ -44,6 +47,7 @@ Workflow {
 		expand = "Template::main FOR model"
 		outlet = {
 			path = dirSrcGen
+//			postprocessor = formatter_java
 			fileEncoding = "UTF-8" // this is the encoding for files written the outlet
 		}
 		// configure Xpand resource encoding (check project resource setting)
