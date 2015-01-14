@@ -1,7 +1,50 @@
 «IMPORT qtQuick»
 
 «DEFINE main FOR ApplicationWindow»
-	«FILE "main.qml"»
-yay!
-	«ENDFILE»
+«FILE "main.qml"»
+import QtQuick 2.3
+import QtQuick.Controls 1.2
+import QtQuick.Layouts 1.1
+
+ApplicationWindow {
+	id: mainWindow
+    visible: true
+    width: «width»
+    height: «height»
+    title: qsTr("«title»")
+	«EXPAND item FOR content.first()»
+}
+«ENDFILE»
+«ENDDEFINE»
+
+«DEFINE item FOR RowLayout»
+RowLayout {
+    id: «id»
+    «EXPAND item FOREACH contains»
+}
+«ENDDEFINE»
+
+«DEFINE item FOR ColumnLayout»
+ColumnLayout {
+    id: «id»
+    anchors.fill: «anchors_fill»
+    anchors.margins: «anchors_margins»
+    «EXPAND item FOREACH contains»
+}
+«ENDDEFINE»
+
+«DEFINE item FOR Button»
+Button {
+    id: «id»
+    text: qsTr("Cancel")
+    Layout.fillWidth: «Layout_fillWidth»
+}
+«ENDDEFINE»
+
+«DEFINE item FOR TextArea»
+TextArea {
+    id: «id»
+    Layout.fillHeight: «Layout_fillHeight»
+    Layout.fillWidth: «Layout_fillWidth»
+}
 «ENDDEFINE»
