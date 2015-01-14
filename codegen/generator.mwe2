@@ -10,12 +10,17 @@ import org.eclipse.xpand2.output.JavaBeautifier
 import org.eclipse.xtend.expression.ResourceManagerDefaultImpl
 
 var modelUri  = "platform:/resource/QtQuick/model/testInstance.xmi"
+var metaModelUri = "platform:/resource/QtQuick/model/qtQuick.ecore"
 var dirSrcGen = "out"
 
 
 Workflow {
 	/* set up EMF for standalone execution */
-	bean = StandaloneSetup { platformUri="." }
+	bean = StandaloneSetup {
+		platformUri="."
+		registerEcoreFile = metaModelUri
+	}
+	
 
 	/** instantiate metamodel */
 	bean = EmfRegistryMetaModel : mm_emf { }
