@@ -25,6 +25,11 @@
 	}
 «ENDDEFINE»
 
+«DEFINE item FOR Item»
+	id: «id»
+	«EXPAND item FOREACH contains»
+«ENDDEFINE»
+
 «DEFINE item FOR RowLayout»
 	RowLayout {
 	    id: «id»
@@ -46,6 +51,7 @@
     	id: «id»
     	text: qsTr("«text»")
     	Layout.fillWidth: «Layout_fillWidth»
+    	«EXPAND item FOREACH contains»
 	}
 «ENDDEFINE»
 
@@ -54,5 +60,6 @@
     	id: «id»
     	Layout.fillHeight: «Layout_fillHeight»
 	    Layout.fillWidth: «Layout_fillWidth»
+	    «EXPAND item FOREACH contains»
 	}
 «ENDDEFINE»
