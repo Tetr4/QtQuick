@@ -36,7 +36,7 @@ ColumnLayout {
 «DEFINE item FOR Button»
 Button {
     id: «id»
-    text: qsTr("Cancel")
+    text: qsTr("«text»")
     Layout.fillWidth: «Layout_fillWidth»
 }
 «ENDDEFINE»
