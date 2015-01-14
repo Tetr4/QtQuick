@@ -2,20 +2,27 @@
 
 «DEFINE main FOR ApplicationWindow»
 	«FILE "main.qml"»
+		«EXPAND imports»
+		«EXPAND applicationWindow»
+	«ENDFILE»
+«ENDDEFINE»
+
+«DEFINE imports FOR ApplicationWindow»
 		import QtQuick 2.3
 		import QtQuick.Controls 1.2
 		import QtQuick.Layouts 1.1
-		
-		ApplicationWindow {
-			id: mainWindow
-    		visible: true
-    		width: «width»
-    		height: «height»
-		    title: qsTr("«title»")
-		    
-			«EXPAND item FOR content.first()»
-		}
-	«ENDFILE»
+«ENDDEFINE»
+
+«DEFINE applicationWindow FOR ApplicationWindow»
+	ApplicationWindow {
+		id: mainWindow
+		visible: true
+		width: «width»
+		height: «height»
+	    title: qsTr("«title»")
+	    
+		«EXPAND item FOREACH content»
+	}
 «ENDDEFINE»
 
 «DEFINE item FOR RowLayout»
