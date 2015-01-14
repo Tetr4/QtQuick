@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<qtQuick:ApplicationWindow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:qtQuick="http://www.example.org/qtQuick" xsi:schemaLocation="http://www.example.org/qtQuick qtQuick.ecore">
+  <content xsi:type="qtQuick:ColumnLayout" id="verticalLayout" anchors_fill="parent">
+    <contains xsi:type="qtQuick:TextArea" id="textEdit" Layout_fillWidth="true" Layout_fillHeight="true"/>
+    <contains xsi:type="qtQuick:RowLayout" id="horizontalLayout">
+      <contains xsi:type="qtQuick:Button" id="okButton" Layout_fillWidth="true" text="OK"/>
+      <contains xsi:type="qtQuick:Button" id="cancelButton" Layout_fillWidth="true" text="Cancel"/>
+    </contains>
+  </content>
+</qtQuick:ApplicationWindow>

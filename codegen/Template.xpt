@@ -1,0 +1,7 @@
+«IMPORT qtQuick»
+
+«DEFINE main FOR ApplicationWindow»
+	«FILE "main.qml"»
+yay!
+	«ENDFILE»
+«ENDDEFINE»

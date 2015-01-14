@@ -1,0 +1,4 @@
+import qtQuick;
+
+ApplicationWindow model(ColumnLayout this) :
+	eContainer;

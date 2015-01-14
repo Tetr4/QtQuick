@@ -1,0 +1,54 @@
+module xpand.example.Generator
+
+import org.eclipse.emf.mwe.utils.Reader
+import org.eclipse.emf.mwe.utils.StandaloneSetup
+import org.eclipse.emf.mwe.utils.DirectoryCleaner
+import org.eclipse.xtend.typesystem.emf.EmfRegistryMetaModel
+import org.eclipse.xtend.check.CheckComponent
+import org.eclipse.xpand2.Generator
+import org.eclipse.xpand2.output.JavaBeautifier
+import org.eclipse.xtend.expression.ResourceManagerDefaultImpl
+
+var modelUri  = "platform:/resource/QtQuick/model/testInstance.xmi"
+var dirSrcGen = "out"
+
+
+Workflow {
+	/* set up EMF for standalone execution */
+	bean = StandaloneSetup { platformUri="." }
+
+	/** instantiate metamodel */
+	bean = EmfRegistryMetaModel : mm_emf { }
+
+	/* load model and store it in slot 'model' */
+	component = Reader {
+		uri = modelUri
+		modelSlot = "model"
+	}
+
+//	/* check model */
+//	component = CheckComponent {
+//		metaModel = mm_emf
+//		checkFile = "metamodel::Checks"
+//		emfAllChildrenSlot = "model"
+//	}
+
+	/** Clear output directory */
+	component = DirectoryCleaner {
+		directory = dirSrcGen
+	}
+
+	/* generate code */
+	component = Generator {
+		metaModel = mm_emf
+		expand = "Template::main FOR model"
+		outlet = {
+			path = dirSrcGen
+			fileEncoding = "UTF-8" // this is the encoding for files written the outlet
+		}
+		// configure Xpand resource encoding (check project resource setting)
+		resourceManager = ResourceManagerDefaultImpl {
+			fileEncoding = "UTF-8"
+		}
+	}
+}
