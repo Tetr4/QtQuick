@@ -59,6 +59,8 @@
 	Label {
     	id: «id»
     	text: qsTr("«text»")
+    	verticalAlignment: Text.«verticalAlignment»
+    	horizontalAlignment: Text.«horizontalAlignment»
     	Layout.fillWidth: «Layout_fillWidth»
     	«EXPAND item FOREACH contains»
 	}

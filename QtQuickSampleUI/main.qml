@@ -16,7 +16,9 @@ ApplicationWindow {
 
 Label {
     id: label1
-    text: qsTr("Label")
+    text: qsTr("Hallo Welt")
+    verticalAlignment: Text.AlignBottom
+    horizontalAlignment: Text.AlignHCenter
     Layout.fillWidth: true
 }
 

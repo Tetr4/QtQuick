@@ -33,6 +33,10 @@
   <eClassifiers xsi:type="ecore:EClass" name="TextArea" eSuperTypes="#//Item"/>
   <eClassifiers xsi:type="ecore:EClass" name="Label" eSuperTypes="#//Item">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="verticalAlignment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="AlignVCenter"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="horizontalAlignment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="AlignLeft"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CheckBox" eSuperTypes="#//Item">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
