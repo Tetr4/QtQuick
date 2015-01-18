@@ -11,7 +11,7 @@ import org.eclipse.xtend.expression.ResourceManagerDefaultImpl
 
 var modelUri  = "platform:/resource/QtQuick/model/QtQuickInstance.xmi"
 var metaModelUri = "platform:/resource/QtQuick/model/qtQuick.ecore"
-var dirSrcGen = "out"
+var outDir = "QtQuickSampleUI"
 
 
 Workflow {
@@ -42,18 +42,18 @@ Workflow {
 //	}
 
 	/** Clear output directory */
-	component = DirectoryCleaner {
-		directory = dirSrcGen
-	}
+//	component = DirectoryCleaner {
+//		directory = dirSrcGen
+//	}
 
 	/* generate code */
 	component = Generator {
 		metaModel = mm_emf
 		expand = "Template::main FOR model"
 		outlet = {
-			path = dirSrcGen
+			path = outDir
 //			postprocessor = formatter_java
-			fileEncoding = "UTF-8"// this is the encoding for files written the outlet
+			fileEncoding = "UTF-8" // this is the encoding for files written the outlet
 		}
 		// configure Xpand resource encoding (check project resource setting)
 		resourceManager = ResourceManagerDefaultImpl {
