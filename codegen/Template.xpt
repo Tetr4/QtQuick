@@ -55,6 +55,35 @@
 	}
 «ENDDEFINE»
 
+«DEFINE item FOR Label»
+	Label {
+    	id: «id»
+    	text: qsTr("«text»")
+    	Layout.fillWidth: «Layout_fillWidth»
+    	«EXPAND item FOREACH contains»
+	}
+«ENDDEFINE»
+
+«DEFINE item FOR RadioButton»
+	RadioButton {
+    	id: «id»
+    	text: qsTr("«text»")
+    	Layout.fillWidth: «Layout_fillWidth»
+    	checked: «checked»
+    	«EXPAND item FOREACH contains»
+	}
+«ENDDEFINE»
+
+«DEFINE item FOR CheckBox»
+	CheckBox {
+    	id: «id»
+    	text: qsTr("«text»")
+    	Layout.fillWidth: «Layout_fillWidth»
+    	checked: «checked»
+    	«EXPAND item FOREACH contains»
+	}
+«ENDDEFINE»
+
 «DEFINE item FOR TextArea»
 	TextArea {
     	id: «id»

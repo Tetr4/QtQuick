@@ -14,11 +14,31 @@ ApplicationWindow {
         anchors.fill: parent
         anchors.margins: 11
 
-        TextArea {
-            id: textEdit
+Label {
+    id: label1
+    text: qsTr("Label")
+    Layout.fillWidth: true
+}
+
+TextArea {
+    id: textEdit
             Layout.fillHeight: true
             Layout.fillWidth: true
         }
+
+RadioButton {
+    id: radioButton1
+    text: qsTr("Radio Button")
+    Layout.fillWidth: true
+    checked: true
+}
+
+CheckBox {
+    id: checkBox1
+    text: qsTr("Check Box")
+    Layout.fillWidth: true
+    checked: true
+}
 
         RowLayout {
             id: horizontalLayout
@@ -35,6 +55,9 @@ ApplicationWindow {
                 Layout.fillWidth: true
             }
         }
+
+
+
     }
 
 }

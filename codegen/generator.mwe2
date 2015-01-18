@@ -53,7 +53,7 @@ Workflow {
 		outlet = {
 			path = dirSrcGen
 //			postprocessor = formatter_java
-			fileEncoding = "UTF-8" // this is the encoding for files written the outlet
+			fileEncoding = "UTF-8"// this is the encoding for files written the outlet
 		}
 		// configure Xpand resource encoding (check project resource setting)
 		resourceManager = ResourceManagerDefaultImpl {
