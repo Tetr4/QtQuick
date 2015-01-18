@@ -29,14 +29,14 @@ TextArea {
         }
 
 RadioButton {
-    id: radioButton1
+    id: radioButton
     text: qsTr("Radio Button")
     Layout.fillWidth: true
     checked: true
 }
 
 CheckBox {
-    id: checkBox1
+    id: checkBox
     text: qsTr("Check Box")
     Layout.fillWidth: true
     checked: false
