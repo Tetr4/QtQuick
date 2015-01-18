@@ -39,7 +39,7 @@ CheckBox {
     id: checkBox1
     text: qsTr("Check Box")
     Layout.fillWidth: true
-    checked: true
+    checked: false
 }
 
         RowLayout {
