@@ -7,13 +7,13 @@
 	«ENDFILE»
 «ENDDEFINE»
 
-«DEFINE imports FOR ApplicationWindow»
+«DEFINE imports FOR ApplicationWindow-»
 		import QtQuick 2.3
 		import QtQuick.Controls 1.2
 		import QtQuick.Layouts 1.1
-«ENDDEFINE»
+«ENDDEFINE-»
 
-«DEFINE applicationWindow FOR ApplicationWindow»
+«DEFINE applicationWindow FOR ApplicationWindow-»
 	ApplicationWindow {
 		id: mainWindow
 		visible: true
@@ -21,76 +21,91 @@
 		height: «height»
 	    title: qsTr("«title»")
 	    
-		«EXPAND item FOREACH content»
+		«EXPAND item FOREACH content-»
 	}
-«ENDDEFINE»
+«ENDDEFINE-»
 
 «DEFINE item FOR Item»
 	id: «id»
-	«EXPAND item FOREACH contains»
-«ENDDEFINE»
+	«EXPAND item FOREACH contains-»
+«ENDDEFINE-»
 
-«DEFINE item FOR RowLayout»
+«DEFINE item FOR RowLayout-»
 	RowLayout {
 	    id: «id»
-	    «EXPAND item FOREACH contains»
+	    «EXPAND item FOREACH contains-»
 	}
-«ENDDEFINE»
+«ENDDEFINE-»
 
-«DEFINE item FOR ColumnLayout»
+«DEFINE item FOR ColumnLayout-»
 	ColumnLayout {
     	id: «id»
     	anchors.fill: «anchors_fill»
     	anchors.margins: «anchors_margins»
-    	«EXPAND item FOREACH contains»
+    	«EXPAND item FOREACH contains-»
 	}
-«ENDDEFINE»
+«ENDDEFINE-»
 
-«DEFINE item FOR Button»
+«DEFINE item FOR Button-»
 	Button {
     	id: «id»
     	text: qsTr("«text»")
     	Layout.fillWidth: «Layout_fillWidth»
-    	«EXPAND item FOREACH contains»
+    	«EXPAND item FOREACH contains-»
 	}
-«ENDDEFINE»
+«ENDDEFINE-»
 
-«DEFINE item FOR Label»
+«REM»
+	MS Shell Dlg 2 gibt's nicht in QtQuick
+«ENDREM»
+«DEFINE item FOR Font-»
+		«IF (family != "MS Shell Dlg 2")-»
+    	font.family: "«family»"
+		«ENDIF-»
+    	font.pointSize: «pointsize»
+    	font.bold: «bold»
+    	font.italic: «italic»
+    	font.underline: «underline»
+    	font.strikeout: «strikeout»
+«ENDDEFINE-»
+
+«DEFINE item FOR Label-»
 	Label {
     	id: «id»
     	text: qsTr("«text»")
     	verticalAlignment: Text.«verticalAlignment»
     	horizontalAlignment: Text.«horizontalAlignment»
     	Layout.fillWidth: «Layout_fillWidth»
-    	«EXPAND item FOREACH contains»
+    	«EXPAND item FOR font-»
+    	«EXPAND item FOREACH contains-»
 	}
-«ENDDEFINE»
+«ENDDEFINE-»
 
-«DEFINE item FOR RadioButton»
+«DEFINE item FOR RadioButton-»
 	RadioButton {
     	id: «id»
     	text: qsTr("«text»")
     	Layout.fillWidth: «Layout_fillWidth»
     	checked: «checked»
-    	«EXPAND item FOREACH contains»
+    	«EXPAND item FOREACH contains-»
 	}
-«ENDDEFINE»
+«ENDDEFINE-»
 
-«DEFINE item FOR CheckBox»
+«DEFINE item FOR CheckBox-»
 	CheckBox {
     	id: «id»
     	text: qsTr("«text»")
     	Layout.fillWidth: «Layout_fillWidth»
     	checked: «checked»
-    	«EXPAND item FOREACH contains»
+    	«EXPAND item FOREACH contains-»
 	}
-«ENDDEFINE»
+«ENDDEFINE-»
 
-«DEFINE item FOR TextArea»
+«DEFINE item FOR TextArea-»
 	TextArea {
     	id: «id»
     	Layout.fillHeight: «Layout_fillHeight»
 	    Layout.fillWidth: «Layout_fillWidth»
-	    «EXPAND item FOREACH contains»
+	    «EXPAND item FOREACH contains-»
 	}
-«ENDDEFINE»
+«ENDDEFINE-»

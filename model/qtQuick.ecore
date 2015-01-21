@@ -37,6 +37,7 @@
         defaultValueLiteral="AlignVCenter"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="horizontalAlignment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         defaultValueLiteral="AlignLeft"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="font" eType="#//Font" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CheckBox" eSuperTypes="#//Item">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -46,6 +47,22 @@
   <eClassifiers xsi:type="ecore:EClass" name="RadioButton" eSuperTypes="#//Item">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="checked" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Font">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="family" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="MS Shell Dlg 2"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pointsize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="8"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="weight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="75"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bold" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="italic" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="underline" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="strikeout" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
         defaultValueLiteral="false"/>
   </eClassifiers>
 </ecore:EPackage>

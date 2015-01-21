@@ -26,5 +26,28 @@
     <genClasses ecoreClass="qtQuick.ecore#//RowLayout"/>
     <genClasses ecoreClass="qtQuick.ecore#//ColumnLayout"/>
     <genClasses ecoreClass="qtQuick.ecore#//TextArea"/>
+    <genClasses ecoreClass="qtQuick.ecore#//Label">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Label/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Label/verticalAlignment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Label/horizontalAlignment"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference qtQuick.ecore#//Label/font"/>
+    </genClasses>
+    <genClasses ecoreClass="qtQuick.ecore#//CheckBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//CheckBox/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//CheckBox/checked"/>
+    </genClasses>
+    <genClasses ecoreClass="qtQuick.ecore#//RadioButton">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//RadioButton/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//RadioButton/checked"/>
+    </genClasses>
+    <genClasses ecoreClass="qtQuick.ecore#//Font">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Font/family"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Font/pointsize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Font/weight"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Font/bold"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Font/italic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Font/underline"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Font/strikeout"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>
