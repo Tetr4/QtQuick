@@ -36,6 +36,7 @@
     	«IF anchors_fill != null»
     		anchors.fill: «anchors_fill»
     	«ENDIF»
+    	anchors.margins: «anchors_margins»
 	    «EXPAND item FOREACH contains-»
 	}
 «ENDDEFINE-»
