@@ -33,6 +33,9 @@
 «DEFINE item FOR RowLayout-»
 	RowLayout {
 	    id: «id»
+    	«IF anchors_fill != null»
+    		anchors.fill: «anchors_fill»
+    	«ENDIF»
 	    «EXPAND item FOREACH contains-»
 	}
 «ENDDEFINE-»
@@ -40,7 +43,9 @@
 «DEFINE item FOR ColumnLayout-»
 	ColumnLayout {
     	id: «id»
-    	anchors.fill: «anchors_fill»
+    	«IF anchors_fill != null»
+    		anchors.fill: «anchors_fill»
+    	«ENDIF»
     	anchors.margins: «anchors_margins»
     	«EXPAND item FOREACH contains-»
 	}
