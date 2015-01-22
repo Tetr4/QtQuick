@@ -26,14 +26,20 @@
 «ENDDEFINE-»
 
 «DEFINE item FOR Item»
-	id: «id»
-	«EXPAND item FOREACH contains-»
+	Item {
+		«IF id != null-»
+			id: «id»
+		«ENDIF»
+		Layout.fillWidth: «Layout_fillWidth»
+		Layout.fillHeight: «Layout_fillHeight»
+		«EXPAND item FOREACH contains-»
+	}
 «ENDDEFINE-»
 
 «DEFINE item FOR RowLayout-»
 	RowLayout {
 	    id: «id»
-    	«IF anchors_fill != null»
+    	«IF anchors_fill != null-»
     		anchors.fill: «anchors_fill»
     	«ENDIF»
     	anchors.margins: «anchors_margins»
@@ -44,7 +50,7 @@
 «DEFINE item FOR ColumnLayout-»
 	ColumnLayout {
     	id: «id»
-    	«IF anchors_fill != null»
+    	«IF anchors_fill != null-»
     		anchors.fill: «anchors_fill»
     	«ENDIF»
     	anchors.margins: «anchors_margins»

@@ -14,3 +14,4 @@ hs_err_pid*
 build-*/
 *.pro.user
 /bin/
+/src-gen/
