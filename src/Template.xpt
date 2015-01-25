@@ -1,9 +1,10 @@
 «IMPORT qtQuick»
+«EXTENSION Extensions»
 
-«DEFINE main FOR ApplicationWindow»
-	«FILE "main.qml"»
-		«EXPAND imports»
-		«EXPAND applicationWindow»
+«DEFINE main FOR ApplicationWindow-»
+	«FILE "main.qml"-»
+		«EXPAND imports-»
+		«EXPAND applicationWindow-»
 	«ENDFILE»
 «ENDDEFINE»
 
@@ -13,111 +14,66 @@
 		import QtQuick.Layouts 1.1
 «ENDDEFINE-»
 
-«DEFINE applicationWindow FOR ApplicationWindow-»
+«DEFINE applicationWindow FOR ApplicationWindow»
 	ApplicationWindow {
-		id: mainWindow
-		visible: true
-		width: «width»
-		height: «height»
-	    title: qsTr("«title»")
-	    
-		«EXPAND item FOREACH content-»
+		id: mainWindow		
+		«FOREACH getAttributes() AS attribute-»
+			«getAttributeName(attribute)-»: «EXPAND attribute FOR getAttributeValue(attribute)-»			
+		«ENDFOREACH-»
+	    «EXPAND item FOREACH content-»
 	}
-«ENDDEFINE-»
+«ENDDEFINE»
 
 «DEFINE item FOR Item»
-	Item {
-		«IF id != null-»
-			id: «id»
-		«ENDIF»
-		Layout.fillWidth: «Layout_fillWidth»
-		Layout.fillHeight: «Layout_fillHeight»
+	«getClassName()-» {
+		«FOREACH getAttributes() AS attribute-»
+			«IF getAttributeName(attribute) == "id"-»
+				id: «id»
+			«ELSEIF getAttributeName(attribute) == "anchors.fill"-»
+			    anchors.fill: «anchors_fill»
+			«ELSE-»
+				«getAttributeName(attribute)-»: «EXPAND attribute FOR getAttributeValue(attribute)-»
+			«ENDIF-»					
+		«ENDFOREACH-»
+		«EXPAND item FOREACH contains-»
+	}
+«ENDDEFINE»
+
+«DEFINE item FOR Label»
+	Label {
+		«FOREACH getAttributes() AS attribute-»
+			«IF getAttributeName(attribute) == "id"-»
+				id: «id»
+			«ELSEIF getAttributeName(attribute) == "verticalAlignment"-»
+				verticalAlignment: Text.«verticalAlignment»
+			«ELSEIF getAttributeName(attribute) == "horizontalAlignment"-»
+				horizontalAlignment: Text.«horizontalAlignment»
+			«ELSE-»
+				«getAttributeName(attribute)-»: «EXPAND attribute FOR getAttributeValue(attribute)-»
+			«ENDIF-»					
+		«ENDFOREACH-»
+		«EXPAND font FOR font-»
 		«EXPAND item FOREACH contains-»
 	}
 «ENDDEFINE-»
 
-«DEFINE item FOR RowLayout-»
-	RowLayout {
-	    id: «id»
-    	«IF anchors_fill != null-»
-    		anchors.fill: «anchors_fill»
-    	«ENDIF»
-    	anchors.margins: «anchors_margins»
-	    «EXPAND item FOREACH contains-»
-	}
+«DEFINE font FOR Font-»
+	«FOREACH getAttributes() AS attribute-»
+		«IF getAttributeName(attribute) == "family"-»
+			«REM» MS Shell Dlg 2 gibt's nicht in QtQuick «ENDREM»
+			«IF (family != "MS Shell Dlg 2")-»
+				font.family: "«family»"
+			«ENDIF-»
+		«ELSE-»
+			font.«getAttributeName(attribute)-»: «EXPAND attribute FOR getAttributeValue(attribute)-»
+		«ENDIF»
+	«ENDFOREACH-»
 «ENDDEFINE-»
 
-«DEFINE item FOR ColumnLayout-»
-	ColumnLayout {
-    	id: «id»
-    	«IF anchors_fill != null-»
-    		anchors.fill: «anchors_fill»
-    	«ENDIF»
-    	anchors.margins: «anchors_margins»
-    	«EXPAND item FOREACH contains-»
-	}
+«DEFINE attribute FOR Object-»
+	«this»
 «ENDDEFINE-»
 
-«DEFINE item FOR Button-»
-	Button {
-    	id: «id»
-    	text: qsTr("«text»")
-    	Layout.fillWidth: «Layout_fillWidth»
-    	«EXPAND item FOREACH contains-»
-	}
-«ENDDEFINE-»
-
-«REM»
-	MS Shell Dlg 2 gibt's nicht in QtQuick
-«ENDREM»
-«DEFINE item FOR Font-»
-		«IF (family != "MS Shell Dlg 2")-»
-    	font.family: "«family»"
-		«ENDIF-»
-    	font.pointSize: «pointsize»
-    	font.bold: «bold»
-    	font.italic: «italic»
-    	font.underline: «underline»
-    	font.strikeout: «strikeout»
-«ENDDEFINE-»
-
-«DEFINE item FOR Label-»
-	Label {
-    	id: «id»
-    	text: qsTr("«text»")
-    	verticalAlignment: Text.«verticalAlignment»
-    	horizontalAlignment: Text.«horizontalAlignment»
-    	Layout.fillWidth: «Layout_fillWidth»
-    	«EXPAND item FOR font-»
-    	«EXPAND item FOREACH contains-»
-	}
-«ENDDEFINE-»
-
-«DEFINE item FOR RadioButton-»
-	RadioButton {
-    	id: «id»
-    	text: qsTr("«text»")
-    	Layout.fillWidth: «Layout_fillWidth»
-    	checked: «checked»
-    	«EXPAND item FOREACH contains-»
-	}
-«ENDDEFINE-»
-
-«DEFINE item FOR CheckBox-»
-	CheckBox {
-    	id: «id»
-    	text: qsTr("«text»")
-    	Layout.fillWidth: «Layout_fillWidth»
-    	checked: «checked»
-    	«EXPAND item FOREACH contains-»
-	}
-«ENDDEFINE-»
-
-«DEFINE item FOR TextArea-»
-	TextArea {
-    	id: «id»
-    	Layout.fillHeight: «Layout_fillHeight»
-	    Layout.fillWidth: «Layout_fillWidth»
-	    «EXPAND item FOREACH contains-»
-	}
+«DEFINE attribute FOR String-»
+	qsTr("«this-»")
 «ENDDEFINE-»

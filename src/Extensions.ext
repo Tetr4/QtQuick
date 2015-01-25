@@ -1,1 +1,15 @@
-import qtQuick;
+import qtQuick;	
+	
+String getClassName(emf::EObject o) :
+	JAVA qtQuick.Helper.getClassName(org.eclipse.emf.ecore.EObject);
+	
+Collection[ecore::EAttribute] getAttributes(emf::EObject o) :
+	JAVA qtQuick.Helper.getAttributes(org.eclipse.emf.ecore.EObject);
+	
+String getAttributeName(emf::EObject o, ecore::EStructuralFeature f) :
+	JAVA qtQuick.Helper.getAttributeName(org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EStructuralFeature);
+	
+Object getAttributeValue(emf::EObject o, ecore::EStructuralFeature f) :
+	JAVA qtQuick.Helper.getAttributeValue(org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EStructuralFeature);
+	
+	
