@@ -28,8 +28,14 @@
   <eClassifiers xsi:type="ecore:EClass" name="Button" eSuperTypes="#//Item">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RowLayout" eSuperTypes="#//Item"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ColumnLayout" eSuperTypes="#//Item"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RowLayout" eSuperTypes="#//Item">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="spacing" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ColumnLayout" eSuperTypes="#//Item">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="spacing" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="5"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TextArea" eSuperTypes="#//Item"/>
   <eClassifiers xsi:type="ecore:EClass" name="Label" eSuperTypes="#//Item">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

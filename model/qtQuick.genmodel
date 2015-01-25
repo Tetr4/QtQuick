@@ -23,8 +23,12 @@
     <genClasses ecoreClass="qtQuick.ecore#//Button">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Button/text"/>
     </genClasses>
-    <genClasses ecoreClass="qtQuick.ecore#//RowLayout"/>
-    <genClasses ecoreClass="qtQuick.ecore#//ColumnLayout"/>
+    <genClasses ecoreClass="qtQuick.ecore#//RowLayout">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//RowLayout/spacing"/>
+    </genClasses>
+    <genClasses ecoreClass="qtQuick.ecore#//ColumnLayout">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//ColumnLayout/spacing"/>
+    </genClasses>
     <genClasses ecoreClass="qtQuick.ecore#//TextArea"/>
     <genClasses ecoreClass="qtQuick.ecore#//Label">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute qtQuick.ecore#//Label/text"/>
